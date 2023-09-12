@@ -99,11 +99,13 @@ title:"Co-Founder"
   const handleFounderButtonClick = () => {
     setTab1(true);
     setTab2(false);
+    setTab3(false)
     setValue('1'); // Set the tab value to '1' when "Founder" is clicked
   };
   const handleFounderButtonClick2 = () => {
     setTab2(true);
     setValue('1'); 
+    setTab3(false)
     setTab1(false);// Set the tab value to '1' when "Founder" is clicked
   };
   const handleFounderButtonClick3 = () => {
@@ -121,13 +123,31 @@ title:"Co-Founder"
       <h1 className='text-[42px] mt-5 text-center text-white'>Explore Hatirpool Session</h1>
       <div className='flex items-center justify-center mt-4'>
         <div className='flex items-center'>
-          <button onClick={handleFounderButtonClick} className={`border-l border-t border-b px-8 py-4 rounded border-gray-900 ${setTab1?" text-amber-600":"text-white"} `}>News</button>
+          <button
+            onClick={handleFounderButtonClick}
+            className={`border-l border-t border-b px-8 py-4 rounded border-gray-900 ${tab1 ? "bg-amber-500 text-black" : "text-white"
+            }`}
+          >
+            News
+          </button>
         </div>
         <div>
-          <button onClick={handleFounderButtonClick2}  className={`border-r border-t border-b px-8 py-4 rounded-tr-md  border-gray-900 ${setTab2 ? ' text-amber-700' : ''}`} >stories</button>
+          <button
+            onClick={handleFounderButtonClick2}
+            className={`border-r border-t border-b px-8 py-4 rounded-tr-md border-gray-900 ${tab2 ? 'bg-amber-500 text-black' : ''
+            }`}
+          >
+            stories
+          </button>
         </div>
         <div>
-          <button onClick={handleFounderButtonClick3}  className={`border-r border-t border-b px-8 py-4 rounded-tr-md  border-gray-900 ${setTab2 ? ' text-amber-700' : ''}`} >Videos</button>
+          <button
+            onClick={handleFounderButtonClick3}
+            className={`border-r border-t border-b px-8 py-4 rounded-tr-md border-gray-900 ${tab3 ? 'bg-amber-500 text-black' : ''
+            }`}
+          >
+            Videos
+          </button>
         </div>
       </div>
 
@@ -137,9 +157,9 @@ title:"Co-Founder"
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -159,7 +179,7 @@ title:"Co-Founder"
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        // modules={[Pagination]}
         className="mySwiper"
       >{
 data.map((item,idx)=>(
@@ -199,9 +219,9 @@ data.map((item,idx)=>(
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,

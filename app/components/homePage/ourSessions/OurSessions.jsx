@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { BsFillPlayFill } from "react-icons/bs";
-
+import 'animate.css';
 
 
 const OurSessions = () => {
@@ -54,8 +54,33 @@ const OurSessions = () => {
     <h4 className='text-center text-[#FF8601]'> Our sessions</h4>
     <h2 className='text-white text-sm lg:text-[42px] font-normal text-center mt-4 '>Listen Our Music Session</h2>
 <div className='flex items-center justify-center gap-10 mt-4 lg:mt-10'>
-<button onClick={()=>{setSession1(true),setSession2(false)}} className='px-4 py-2 font-medium lg:px-8 lg:py-[18px] bg-amber-500 rounded-[100px] '>Session 1</button>
-<button onClick={()=>{setSession2(true),setSession1(false)}} className='px-4 py-2  lg:px-8 lg:py-[18px] rounded-[100px]  border text-white'>Session 2</button>
+<button
+  onClick={() => {
+    setSession1(true);
+    setSession2(false);
+  }}
+  className={`px-4 py-2 font-medium lg:px-8 lg:py-[18px] ${
+    session1
+      ? 'bg-amber-500 text-black'
+      : 'bg-gray-900 text-white'
+  } rounded-[100px]`}
+>
+  Session 1
+</button>
+
+<button
+  onClick={() => {
+    setSession2(true);
+    setSession1(false);
+  }}
+  className={`px-4 py-2 lg:px-8 lg:py-[18px] rounded-[100px] border  ${
+    session2
+      ? 'bg-amber-500 text-black'
+      : 'bg-gray-900 text-white'
+  }`}
+>
+  Session 2
+</button>
 </div>
 
  </div>
@@ -90,7 +115,7 @@ const OurSessions = () => {
       <div className="flex gap-3 items-center">
         <BsFillPlayFill />
         <div>
-          <Image src="/session1smallImage.png" alt="s1" height={40} width={40} />
+          <Image src="/session1smallImage.png" alt="s1" height={40} width={40}  />
         </div>
         <p>{item.title}</p>
       </div>
@@ -131,7 +156,7 @@ const OurSessions = () => {
         </div>
         </div>
          <div>
-        <Image src="/Session1pic.png" alt='session 1 ' className='w-full' width={591} height={591}/>
+        <Image src="/Session1pic.png" alt='session 1 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591}/>
         <div>
         <audio src="" className='text-white'>hello</audio>
         </div>
@@ -204,7 +229,7 @@ const OurSessions = () => {
         <div className=' flex mt-2 items-center '>
             <h1 className=' text-white'> Listen full Session on</h1>  
             <Link href="">
-            <Image src="/YoutubeOrginal.png" alt='u tube' width={25} height={25} className='ml-5'/> </Link>
+            <Image src="/YoutubeOrginal.png" alt='u tube' width={25} height={25} className='ml-5 '/> </Link>
               <p className='text-white font-medium text-sm lg:text-2xl ml-2'> You Tube</p>
               <Link href="">
             <Image src="/spotify2.png" alt='u tube' width={25} height={25} className='ml-5'/> </Link>
@@ -213,7 +238,7 @@ const OurSessions = () => {
         </div>
         </div>
          <div>
-        <Image src="/session2Image.png" alt='session 2 ' className='w-full' width={591} height={591}/>
+        <Image src="/session2Image.png" alt='session 2 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591} />
         <div>
         <audio src="" className='text-white'>hello</audio>
         </div>

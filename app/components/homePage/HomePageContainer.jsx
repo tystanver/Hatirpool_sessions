@@ -12,7 +12,7 @@ import ContactUsSecond from './contactUs2/ContactUsSecond'
 
 const HomePageContainer = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black px-4 lg:px-2 '>
         <HeroSection/>
         <OurSessions/>
          <AboutUs/>

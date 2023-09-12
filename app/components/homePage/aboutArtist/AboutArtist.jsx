@@ -113,10 +113,24 @@ title:"Co-Founder"
       <h1 className='text-[42px] mt-5 text-center text-white'>Know The Artist</h1>
       <div className='flex items-center justify-center mt-4'>
         <div className='flex items-center'>
-          <button onClick={handleFounderButtonClick} className={`border-l border-t border-b px-8 py-4 rounded border-gray-900 ${setTab1?" text-amber-600":"text-white"} `}>Founder</button>
+        <button
+    onClick={handleFounderButtonClick}
+    className={`border-l border-t border-b px-8 py-4 rounded border-gray-900 ${
+      tab1 ? 'bg-amber-500 text-black' : 'text-white'
+    } `}
+  >
+    Founder
+  </button>
         </div>
         <div>
-          <button onClick={handleFounderButtonClick2}  className={`border-r border-t border-b px-8 py-4 rounded-tr-md  border-gray-900 ${setTab2 ? ' text-amber-700' : ''}`} >Artist</button>
+        <button
+    onClick={handleFounderButtonClick2}
+    className={`border-r border-t border-b px-8 py-4 rounded-tr-md border-gray-900 ${
+      tab2 ? 'text-black bg-amber-500' : 'text-white'
+    }`}
+  >
+    Artist
+  </button>
         </div>
       </div>
 
@@ -126,9 +140,9 @@ title:"Co-Founder"
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -179,9 +193,9 @@ data.map((item,idx)=>(
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,

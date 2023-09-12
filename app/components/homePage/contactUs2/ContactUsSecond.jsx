@@ -4,7 +4,7 @@ import { TextField } from '@mui/material';
 import { useFormik } from 'formik';
 import Image from 'next/image'
 import * as Yup from 'yup';
-
+import 'animate.css';
 const ContactUsSecond = () => {
 
   const validationSchema = Yup.object().shape({
@@ -46,10 +46,10 @@ const ContactUsSecond = () => {
   return (
     <div className='lg:grid grid-cols-2 mt-5 lg:mt-10 gap-10'>
       <div className='grid grid-cols-2'>
-        <Image src="/contactImage1.png" height={262} width={262} alt='tan' className='w-full'/>
-        <Image src="/contactImage2.png" height={262} width={262} alt='tan' className='w-full'/>
-        <Image src="/contactImage3.png" height={262} width={262} alt='tan' className='w-full'/>
-        <Image src="/contactImage4.png" height={262} width={262} alt='tan' className='w-full'/>
+        <Image src="/contactImage1.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInLeft'/>
+        <Image src="/contactImage2.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInRight'/>
+        <Image src="/contactImage3.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInLeft'/>
+        <Image src="/contactImage4.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInRight'/>
       </div>
       <div className='flex items-center justify-center'>
       <div className='text-white'>
