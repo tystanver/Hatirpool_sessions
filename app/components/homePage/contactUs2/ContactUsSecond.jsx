@@ -46,10 +46,10 @@ const ContactUsSecond = () => {
   return (
     <div className='lg:grid grid-cols-2 mt-5 lg:mt-10 gap-10'>
       <div className='grid grid-cols-2'>
-        <Image src="/contactImage1.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInLeft'/>
+        <Image src="/contactImage1.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__backInDown'/>
         <Image src="/contactImage2.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInRight'/>
         <Image src="/contactImage3.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInLeft'/>
-        <Image src="/contactImage4.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__fadeInRight'/>
+        <Image src="/contactImage4.png" height={262} width={262} alt='tan' className='w-full animate__animated  animate__backInUp'/>
       </div>
       <div className='flex items-center justify-center'>
       <div className='text-white'>

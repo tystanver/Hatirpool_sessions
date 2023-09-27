@@ -199,12 +199,12 @@ const Navbar = () => {
                       
                   
                         <li className='tex-white'>
-                        <Link href='/' className={currentRoute === '/' ? "font-medium text-[#FF8601]" : "font-medium"}>
+                        <Link href='/' className={currentRoute === '/' ? "font-medium text-[#FF8601]" : "font-medium text-white"}>
                               Story
                             </Link>
                         </li>
                         <li className='tex-white'>
-                        <Link href='/' className={currentRoute === '/' ? "font-medium text-[#FF8601]" : "font-medium"}>
+                        <Link href='/' className={currentRoute === '/' ? "font-medium text-[#FF8601] " : "font-medium text-white"}>
                               Artist
                             </Link>
                         </li>
@@ -230,7 +230,7 @@ const Navbar = () => {
                         
                         </li> */}
     <li>
-
+    {/* <Link href='/' className={currentRoute === '/' ? "font-medium text-[#FF8601] " : "font-medium text-white"}> */}
 <div>
 <Button className='text-lg'
 id="demo-customized-button"
@@ -275,14 +275,16 @@ More
 </StyledMenu>
 </div>
 
-
+{/* </Link> */}
 
 </li>
        
                     </ul>
                 </div>
                 <div className='hidden lg:block'>
-                    <button className='bg-[#FF8601] px-4 py-2 lg:px-8 lg:py-4 rounded-lg lg:rounded-[20px]'>Book a Show</button>
+                <Link href="/bookAShowPage">
+                <button className='bg-[#FF8601] px-4 py-2 lg:px-8 lg:py-4 rounded-lg lg:rounded-[20px]'>Book a Show</button>
+                </Link>
                 </div>
             </div>
         </nav>

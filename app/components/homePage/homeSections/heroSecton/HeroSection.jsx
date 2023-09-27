@@ -30,12 +30,15 @@ const HeroSection = () => {
 </button>
 </div>
 <div>
-<button className='flex gap-2 items-center  hover:border-b-[4px] transition-all 
+  <Link href="https://www.youtube.com/@HatirpoolSessions">
+  <button className='flex gap-2 items-center  hover:border-b-[4px] transition-all 
 hover:border-b-3 hover:border-[#FF8601]
 px-4 py-2  lg:px-8 lg:py-4 rounded-[100px] bg-white '>
 <BiLogoYoutube className=" text-black "/>
 <p className='text-black'>You tube</p>
 </button>
+  </Link>
+
 </div>
 </div>
      </div>

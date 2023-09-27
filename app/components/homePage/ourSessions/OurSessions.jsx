@@ -149,14 +149,18 @@ const OurSessions = () => {
         </div>
         <div className=' flex  mt-2 items-center ml-4 '>
             <h1 className=' text-white'> Listen full Session on</h1>  
-            <Link href="">
+            <Link href="https://www.youtube.com/@HatirpoolSessions">
             <Image src="/YoutubeOrginal.png" alt='u tube' width={25} height={25} className='ml-5'/> </Link>
               <p className='text-white font-medium text-sm lg:text-2xl ml-2'> You Tube</p>
         
         </div>
         </div>
          <div>
-        <Image src="/Session1pic.png" alt='session 1 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591}/>
+         <Link href="https://www.youtube.com/watch?v=O3cIfEV0Emw&ab_channel=YamahaMusicBangladesh-ACIMotorsLtd">
+         <Image src="/Session1pic.png" alt='session 1 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591}/>
+          </Link>
+        
+       
         <div>
         <audio src="" className='text-white'>hello</audio>
         </div>
@@ -210,13 +214,13 @@ const OurSessions = () => {
     
     <div className="flex items-center gap-3 overflow-hidden ">
             {isHovered === idx && (
-              <Image
-                src="/YoutubeOrginal.png"
-                alt="u tube"
-                width={25}
-                height={25}
-                className=" "
-              />
+              <Link href="https://www.youtube.com/@HatirpoolSessions"><Image
+              src="/YoutubeOrginal.png"
+              alt="u tube"
+              width={25}
+              height={25}
+              className=" "
+            /></Link>
             )}
             <p>{item.duration}</p>
           </div>
@@ -228,17 +232,20 @@ const OurSessions = () => {
         </div>
         <div className=' flex mt-2 items-center '>
             <h1 className=' text-white'> Listen full Session on</h1>  
-            <Link href="">
+            <Link href="https://www.youtube.com/@HatirpoolSessions">
             <Image src="/YoutubeOrginal.png" alt='u tube' width={25} height={25} className='ml-5 '/> </Link>
               <p className='text-white font-medium text-sm lg:text-2xl ml-2'> You Tube</p>
-              <Link href="">
+              <Link href="open.spotify.com/playlist/4YVsxvaJi1tsrl4otlNwfo">
             <Image src="/spotify2.png" alt='u tube' width={25} height={25} className='ml-5'/> </Link>
             <p className='text-white font-medium text-sm lg:text-2xl ml-2'>Spotify</p>
         
         </div>
         </div>
          <div>
-        <Image src="/session2Image.png" alt='session 2 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591} />
+          <Link href="https://www.youtube.com/watch?v=O3cIfEV0Emw&ab_channel=YamahaMusicBangladesh-ACIMotorsLtd">
+          <Image src="/session2Image.png" alt='session 2 ' className='w-full animate__animated  animate__fadeInRight' width={591} height={591} />
+          </Link>
+        
         <div>
         <audio src="" className='text-white'>hello</audio>
         </div>

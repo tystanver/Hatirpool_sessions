@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className} suppressHydrationWarning={true}>
         <Navbar />
 <div className='bg-black'>{children}</div>
-        <Footer  />
+        <Footer />
         </body>
     </html>
   )

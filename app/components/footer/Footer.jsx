@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <footer className=" text-sm lg:text-lg lg:pt-20  pb-10 py-10 top-[100vh] sticky  bottom-0 bg-black text-white ">
       <div
-        className="container mx-auto  lg:p-[74px] bg-gray-900 lg:flex text-center lg:text-left justify-between border-b pb-10 lg:pb-20 space-y-8 lg:space-y-0"
+        className="container mx-auto  lg:p-[74px] rounded-lg bg-gray-900 lg:flex text-center lg:text-left justify-between border-b pb-10 lg:pb-20 space-y-8 lg:space-y-0"
       >
         <div className=" ">
           <div className="flex justify-center lg:justify-start">
